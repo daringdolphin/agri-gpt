@@ -38,8 +38,7 @@ retriever = db.as_retriever()
 st.markdown("""
 ---
 ### About
-Query an agricultural guidance document on quantifying and reporting emissions in the agricultural industry.""")
-
+Your AI-powered guide to navigating agricultural emissions reporting, simplifying GHG Protocol guidance into actionable insights.""")
 
 user_query = st.text_input("Enter your query here:", "What are major sources of agricultural emissions and how do I account for these emissions?")
 
@@ -74,4 +73,7 @@ with st.expander("Selected relevant context in guidance document"):
     results = retriever.invoke(user_query)
     for chunks in results:
         st.write(chunks.page_content)
+
+st.markdown("""---""")
+
 
