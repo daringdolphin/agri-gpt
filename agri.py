@@ -41,11 +41,11 @@ st.markdown("""
 Query an agricultural guidance document on quantifying and reporting emissions in the agricultural industry.""")
 
 
-user_query = st.text_input("Enter your query here:", "What are major sources of agricultural emissions?")
+user_query = st.text_input("Enter your query here:", "What are major sources of agricultural emissions and how do I account for these emissions?")
 
 # Search button
 if user_query:
-    with st.spinner("Searching... Please wait."):
+    with st.spinner("Searching the document... Please wait."):
         template = """Provide answers that are formatted simply for ease of understanding. Answer the question based only on the following context:
         {context}
 
@@ -70,7 +70,7 @@ if user_query:
 
 st.markdown("""---""")
 
-with st.expander("Show relevant context in guidance document"):
+with st.expander("Selected relevant context in guidance document"):
     results = retriever.invoke(user_query)
     for chunks in results:
         st.write(chunks.page_content)
