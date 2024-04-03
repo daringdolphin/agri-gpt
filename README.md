@@ -12,7 +12,7 @@ The Solution:
 
 ## Usage
 
-Visit [agriGPT.streamlit.app](agriGPT.streamlit.app)
+Visit [agri-gpt.streamlit.app](agri-gpt.streamlit.app)
 
 ## How It Works
 
