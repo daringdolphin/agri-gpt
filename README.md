@@ -1,11 +1,11 @@
 # 🌳Agri-GPT🌳
 
-Agri-GPT is a Streamlit application designed to answer queries about quantifying and reporting emissions in the agricultural industry, based on agricultural guidance documents published under the GHG Protocol.
+Agri-GPT is designed to answer queries about quantifying and reporting emissions in the agricultural industry, based on agricultural guidance documents published under the GHG Protocol.
 
 The problem: 
-* The agricultural industry accounts for ~20% of global emissions; it is important quantify and measure the emissions in this sector to guide reduction strategies.
-* Accounting for emissions in this sector is complex due to the diversity of emission sources and measurement techniques.
-* Combing through extensive sector-specific guidance documents is tedious.
+* It is crucial to quantify and measure emissions for the agri industry to guide reduction strategies because the agricultural industry accounts for ~20% of global emissions.
+* Yet, accounting for emissions in this sector is complex due to the diversity of emission sources and measurement techniques.
+* It is tedious to comb through extensive sector-specific guidance documents.
 
 The Solution: 
 * A RAG-based app for an Agricultural guidance document published by the GHG protocol.
